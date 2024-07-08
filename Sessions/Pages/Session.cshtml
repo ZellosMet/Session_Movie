@@ -1,0 +1,22 @@
+﻿@page
+@model Sessions.Pages.SessionModel
+@using Session
+@{
+    ViewData["Title"] = "Session";
+}
+    <div class="text-center">
+    <h1 class="display-4">Session</h1>
+    </div>
+    <div>
+    @foreach (var movie in Model.MSS.SessionList)
+        {
+        <p>@movie.Key</p>
+        @foreach (var session in movie.Value)
+        {
+            <ul>
+                <li>Time session: @session.Date @session.Time</li>
+            </ul>            
+        }
+    }    
+</div>
+
