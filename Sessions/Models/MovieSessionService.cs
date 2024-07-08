@@ -2,6 +2,7 @@
 
 namespace Sessions.Model
 {
+    //Класс получения данных(для примера)
     public class MovieSessionService
     {
         static readonly Movie Movie1 = new Movie("movie_name1", "movie_director1", "movie_style1", "movie_description1");

@@ -1,5 +1,6 @@
 ﻿namespace Sessions.Model
 {
+    //Класс фильмов
     public class Movie
     {
         public string Name { get; }

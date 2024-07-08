@@ -1,5 +1,6 @@
 ﻿namespace Sessions.Model
 {
+    //Класс хранения времени сканса
     public class Session
     {
         public string Date { get; }
