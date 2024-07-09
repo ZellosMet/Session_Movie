@@ -11,7 +11,10 @@
     <div>
     @foreach (var movie in Model.MSS.SessionList)
         {
-        <p>@movie.Key</p>
+        <a asp-area="" asp-page="/MovieInfo" asp-route-name="@movie.Key">@movie.Key</a>
+            @*
+                <p>@movie.Key</p>
+            *@
         @foreach (var session in movie.Value)
         {
             <ul>
