@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.DataProtection.Internal;
+п»їusing Microsoft.AspNetCore.DataProtection.Internal;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -14,19 +14,19 @@ namespace Sessions.Pages
             this.MSS = mss;
         }
         public void OnGet() {}
-        // Запрос на добавление фильма
+        // Р—Р°РїСЂРѕСЃ РЅР° РґРѕР±Р°РІР»РµРЅРёРµ С„РёР»СЊРјР°
         public IActionResult OnPostAddMovie(string name, string director, string style, string description)
         { 
             MSS.AddMovie(name, director, style, description);
             return Page();
         }
-        //Запрос на добавление сеанса
+        //Р—Р°РїСЂРѕСЃ РЅР° РґРѕР±Р°РІР»РµРЅРёРµ СЃРµР°РЅСЃР°
         public IActionResult OnPostAddSession(string name, string date, string time)
         {
             MSS.AddSession(name, date, time);
             return Page();
         }
-        // Запрос на удалени фильма
+        // Р—Р°РїСЂРѕСЃ РЅР° СѓРґР°Р»РµРЅРё С„РёР»СЊРјР°
         public IActionResult OnPostDeleteMovie(string name)
         {
             MSS.RemoveMovie(name);
